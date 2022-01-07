@@ -37,3 +37,21 @@ const swiper = new Swiper('.swiper', {
   mousewheel: true,
   keyboard: true
 })
+
+/* --- scroll ---*/
+const scrollReveal = ScrollReveal({
+  origin: 'top',
+  distance: '30px',
+  duration: 700,
+  reset: true
+})
+
+scrollReveal.reveal(
+  `#home .text, #home .image
+#about .image, #about .text,
+#services header, #services .card,
+#testimonials header, #testimonials .testimonials
+#contacr .text, #contact .links
+`,
+  { interval: 100 }
+)
